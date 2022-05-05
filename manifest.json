@@ -1,0 +1,36 @@
+{
+    "name": "Dark Glow",
+    "Description": "Dark glow is a chrome extention that helps you convert each webpage from light mode to dark mode and vise versa",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "popup.js"
+        ],
+        "persisttent": true
+    },
+    "browser_action": {
+        "default_title": "Dark Glow",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/flaz.jpg",
+            "32": "images/flaz.jpg",
+            "48": "images/flaz.jpg",
+            "128": "images/flaz.jpg"
+            }        
+    },
+    
+    "icon": {
+        "16": "images/flaz.jpg",
+        "32": "images/flaz.jpg",
+        "48": "images/flaz.jpg",
+        "128": "images/flaz.jpg"
+    },
+
+    "permissions":[
+        "https://*/*",
+        "http://*/*",
+        "tabs",
+        "scripting"
+    ]
+}

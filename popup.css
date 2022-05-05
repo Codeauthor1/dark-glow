@@ -1,0 +1,87 @@
+html, body{
+    min-width: 300px;
+    height: auto;
+    color: #000;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+p, .btn{
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    flex-direction: row;
+    background: rgba(255, 0, 0, .7);
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.row{
+    padding: 5px 5px;
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    background: rgb(255, 97, 97);
+    pointer-events: none;
+}
+
+ /* animation */
+
+ @keyframes Move_circle_right {
+     from{
+         left: 0;
+         background: rgba(255, 0, 0, .7);
+     }
+     to{
+         left: 100%;
+         transform: translateX(-100%);
+         background: green;
+     }
+ }
+
+ @keyframes Move_circle_left {
+     from{
+         left: 100%;
+         background: green;
+         transform: translateX(-100%);
+     }
+     to{
+         left: 0;
+         background: rgba(255, 0, 0, 1);
+     }
+ }
+
+ @keyframes background_green {
+     from{
+        background: rgba(255, 0, 0, .7);
+     }
+     to{
+         background: rgba(0, 255, 0, .7);
+     }
+ }
+ 
+ @keyframes background_red {
+     from{
+         background: rgba(0, 255, 0, .7);
+        }
+        to{
+        background: rgba(255, 0, 0, .7);
+     }
+ }
